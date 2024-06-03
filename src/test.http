@@ -1,0 +1,32 @@
+### local development
+@serverUrl = http://localhost:3000
+
+### Health Check"
+GET {{serverUrl}}/health
+Content-Type: application/json
+
+### Find All Users"
+GET {{serverUrl}}/users
+Content-Type: application/json
+
+### Create User"
+POST {{serverUrl}}/users
+Content-Type: application/json
+
+{
+  "name": "chris",
+  "email": "chris@csie.io"
+}
+
+### Find All Products"
+GET {{serverUrl}}/products
+Content-Type: application/json
+
+### Create Product
+POST {{serverUrl}}/products
+Content-Type: application/json
+
+{
+  "name": "book1",
+  "price": 100
+}
